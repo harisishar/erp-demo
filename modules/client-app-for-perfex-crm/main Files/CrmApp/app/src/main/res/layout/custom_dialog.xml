@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangular_curve_border"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/attach_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Attach form File"
+            android:textSize="14sp"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/attach_drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:text="Attach form Drive"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/attach_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:text="Attach form Gallery"
+            android:textColor="@color/text_color">
+        </TextView>
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:text="Cancel"
+            android:textColor="@color/text_color">
+        </TextView>
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

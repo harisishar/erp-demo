@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/app_bar_layout"/>
+
+
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_shape"
+            android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/tv_ticket_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Ticket Name"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_shape"
+            android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/tv_department"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Department"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size"
+            android:maxLines="1"
+            android:singleLine="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_shape"
+            android:layout_marginTop="8dp">
+        <EditText
+            android:id="@+id/tv_subject"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Ticket Subject"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size"
+            android:maxLines="1" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_shape"
+            android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:enabled="false"
+            android:hint="Enter Ticket Status"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size"
+            android:maxLines="1"
+            android:text=""/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_shape"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:hint="Enter date (yyyy-mm-dd)"
+                android:imeOptions="actionDone"
+                android:enabled="false"
+                android:maxLines="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/create_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rectangular_blue_drawable"
+            android:text="Add Ticket"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:typeface="monospace" />
+    </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

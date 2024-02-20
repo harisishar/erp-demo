@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/action_bar_image"
+    android:backgroundTint="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:clipToPadding="false">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_arrow_back"/>
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/back_btn"
+            android:hint="Company name"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/med_text"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue"/>
+        <ImageView
+            android:id="@+id/notification_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:layout_toLeftOf="@+id/logout"
+            android:background="@drawable/notification_image"/>
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_logout_dp"/>
+    </RelativeLayout>
+<LinearLayout
+
+    android:id="@+id/linear_layout_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/back_btn"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/ic_launcher_background" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/user_image"
+                android:layout_below="@id/back_btn"
+                android:text="Name"
+                android:textSize="@dimen/med_text"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:textColor="@color/text_color"/>
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/user_image"
+                android:layout_below="@+id/user_name"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:text="Company Name"
+                android:gravity="center"
+                android:textColor="@color/light_blue"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
